@@ -21,16 +21,16 @@ function threeSum(nums) {
 			}  else if (sum < target) {
 				start++
 			} else {
-				  res.push([nums[i], nums[start], nums[end]]);
-				  console.log([nums[i], nums[start], nums[end]]);
-				   while (nums[start] === nums[start + 1]) {
-				   	start++
-				   }    
-			        while (nums[end] === nums[end - 1]) {
-			          end--
-			        }
-        			end--
-        			start++
+				res.push([nums[i], nums[start], nums[end]]);
+				console.log([nums[i], nums[start], nums[end]]);
+				while (nums[start] === nums[start + 1]) {
+				start++
+				}    
+				while (nums[end] === nums[end - 1]) {
+					end--
+				}
+				end--
+				start++
 			}
 		}
 	}
